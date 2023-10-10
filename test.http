@@ -1,0 +1,189 @@
+// =================================================================
+
+// MISSIONS
+
+// =================================================================
+
+
+// Récupérer toutes les missions d'un utilisateur donné
+# GET http://localhost:3000/mission
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Récupérer une mission donnée
+# GET http://localhost:3000/mission/14
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Réucpérer toutes les missions pour un user et un client donnés
+# GET http://localhost:3000/missions/18
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Créer une mission
+# POST http://localhost:3000/mission
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+# {
+#       "name": "Création d'un site vitrine pour Omer",
+#       "startDate": "2023-05-16",
+#       "status": "En cours",
+#       "totalPrice": 1000,
+#       "tva": 20,
+#       "declarate": false,
+#       "clientId": 18
+# }
+
+// Mettre à jour les infos d'une mission
+# PATCH http://localhost:3000/mission/23
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+# {
+#       "status": "Terminée",
+#       "clientId": 15
+# }
+
+// Supprimer une mission
+# DELETE http://localhost:3000/mission/23
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// =================================================================
+
+// CLIENTS
+
+// =================================================================
+
+
+// Récupérer tous les clients d'un utilisateur donné
+# GET http://localhost:3000/clients
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Créer un client
+# POST http://localhost:3000/clients
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+# {
+#     "email": "david.lerock@wanadoo.fr",
+#     "firstName": "David",
+#     "lastName": "Hallyday",
+#     "address": ""
+# }
+
+// Mettre à jour les infos d'un client
+# PATCH http://localhost:3000/clients/15
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+# {
+#       "firstName": "10 avenue de Booba"
+# }
+
+// Récupérer un client donné
+# GET http://localhost:3000/clients/17
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Supprimer un client
+# DELETE http://localhost:3000/clients/17
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// =================================================================
+
+// USER
+
+// =================================================================
+
+// Login
+# POST http://localhost:3000/login
+# Content-Type: application/json
+
+# {
+#       "email": "lemike.kistax@gmail.com",
+#       "password": "klaxone"
+# }
+
+// Enregistrer un nouvel utilisateur en BDD
+# POST http://localhost:3000/register
+# Content-Type: application/json
+
+# {
+#      "firstName": "Bastien",
+#       "lastName": "Surivet",
+#       "email": "bastien.surivet@gmail.com",
+#      "password": "bastos2ouf"
+# }
+
+// Récupérer les infos de l'utilisateur
+# GET http://localhost:3000/user
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// Mettre à jour les infos de l'utilisateur
+# PATCH http://localhost:3000/user
+# Content-Type: application/json
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+# {
+#     "lastName": "Brrrrrrrrrrrr"
+# }
+
+// Mettre à jour le mot de passe de l'utilisateur
+# PATCH http://localhost:3000/updatepassword
+# Content-Type: application/json
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1NDM2MzUxLCJleHAiOjE2ODYzMDAzNTF9.V4gb0w1OS8XCz8D8kBrZ8ZjwZLt7BWt8hZs7XGZBRBk
+
+# {
+#     "currentPassword": "tapesonne",
+#     "confirmPassword": "klaxonne"
+# }
+
+// Supprimer un utilisateur
+# DELETE http://localhost:3000/user
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDg4NDQwLCJleHAiOjE2ODU5NTI0NDB9.Yobmw2hIWxjtMoTLaL-Iji34TDwNjn0zbt-UW_Vb9nY
+
+// =================================================================
+
+// MISSION DETAILS
+
+// =================================================================
+
+// Récupérer tous les détails de mission
+// GET http://localhost:3000/missiondetails
+
+// Récupérer tous les détails d'une mission donnée
+# GET http://localhost:3000/14/missiondetails
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0ODQ0MzM5LCJleHAiOjE2ODQ4NDc5Mzl9.XrSsgkFNmagoIz7VdB9PHmzJb1CHcKR_bWDT2o_iod0
+
+// Créer un détail de mission
+# POST http://localhost:3000/14/missiondetails
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0ODQ0MzM5LCJleHAiOjE2ODQ4NDc5Mzl9.XrSsgkFNmagoIz7VdB9PHmzJb1CHcKR_bWDT2o_iod0
+
+# {
+#     "description": "Lier le front-end et le back-end",
+#     "quantity": 1,
+#     "price": 150
+# }
+
+// Modifier un détail de mission
+# PATCH http://localhost:3000/missiondetails/13
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0ODQ0MzM5LCJleHAiOjE2ODQ4NDc5Mzl9.XrSsgkFNmagoIz7VdB9PHmzJb1CHcKR_bWDT2o_iod0
+
+# {
+#     "description": "Peaufiner le back"
+# }
+
+// Supprimer un détail de mission
+# DELETE http://localhost:3000/missiondetails/11
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0ODQ0MzM5LCJleHAiOjE2ODQ4NDc5Mzl9.XrSsgkFNmagoIz7VdB9PHmzJb1CHcKR_bWDT2o_iod0
+
+
+// 404
+# GET http://localhost:3000/saladetomateoignons/
